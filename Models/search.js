@@ -1,11 +1,13 @@
+
 const mongooseOnCall = require('mongoose');
 
 var callTrackerSchema = mongooseOnCall.Schema([{
+
   SNo:Number,
   ReportedDateTime: String,
   IA: String,
   IR: String,
-  Severity: String,
+  Severity: Number,
   FunctionalArea: String,
   ReportedBy: String,
   ProblemReported: String,
